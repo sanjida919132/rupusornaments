@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #fcf9f8;
+    color: #1b1c1c;
+    scroll-behavior: smooth;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f6f3f2;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d9c1c1;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #867273;
+  }
+
+  /* Material Symbols sizing and alignment */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 1;
+  }
+}
+
+/* Custom Haute Joaillerie Typography Classes */
+.font-headline-lg {
+  font-family: 'Bodoni Moda', 'Noto Serif Bengali', serif;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 1024px) {
+  .font-headline-lg {
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+  }
+}
+
+.font-headline-md {
+  font-family: 'Bodoni Moda', 'Noto Serif Bengali', serif;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.font-headline-sm {
+  font-family: 'Bodoni Moda', 'Noto Serif Bengali', serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.font-subheading-editorial {
+  font-family: 'Bodoni Moda', 'Noto Serif Bengali', serif;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+
+.font-display-hero {
+  font-family: 'Bodoni Moda', 'Noto Serif Bengali', serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 1024px) {
+  .font-display-hero {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+}
+
+.font-body-lg {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.font-label-uppercase {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.font-price-lg {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-price-md {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  letter-spacing: 0;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
